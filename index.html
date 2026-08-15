@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="banner.jpg">
+    <title>Scalevir | Marketing & Events Agency</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bevan&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Banner -->
+    <div class="top-banner" id="announcementBanner">
+        <span>Scalevir Marketing & Events Agency</span>
+        <button class="close-banner-btn" id="closeBannerBtn" title="Close Banner" aria-label="Close Banner">✕</button>
+    </div>
+
+    <!-- Clean Rounded Top Banner Section -->
+    <section class="banner-wrapper">
+        <div class="rounded-top-banner">
+            <img src="banner.jpg" alt="Scalevir Opening Banner">
+        </div>
+    </section>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="#" class="nav-logo">
+                <img src="banner.jpg" alt="Scalevir Logo">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-btn">About Us</a></li>
+                <li><a href="#services" class="nav-btn">Services</a></li>
+                <li><a href="#showcase" class="nav-btn">Portfolio</a></li>
+                <li><a href="#contact" class="btn-primary nav-btn-highlight">Work With Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in">
+        <div class="hero-card">
+            <h1>We create high-impact marketing and unforgettable live events.</h1>
+            <p>From end-to-end brand strategy to curated private experiences and interactive event stations.</p>
+            <a href="#contact" class="btn-primary">Inquire Now / Work With Us</a>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="about-section fade-in" id="about">
+        <div class="about-container">
+            <h2>Who We Are</h2>
+            <div class="about-tagline-wrapper">
+                <p class="about-tagline">MARKETING THAT MOVES PEOPLE.<br>EVENTS THAT MAKE THEM REMEMBER.</p>
+            </div>
+            <p>Scalevir is a marketing & events agency built at the intersection of creativity and experience. We help
+                brands grow through strategic digital marketing, while creating thoughtfully curated events and
+                experiences that connect people, spark engagement, and leave a lasting impression.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section fade-in" id="services">
+        <h2 class="section-title">Services Offered</h2>
+        <div class="services-grid">
+
+            <!-- Left Card: Event Services -->
+            <div class="service-card">
+                <h3>Event Services</h3>
+                <p class="quote">"Promotional Brand Events"</p>
+                <ul class="service-list">
+                    <li>Private Parties & Celebrations</li>
+                    <li>Functions & Corporate Events</li>
+                    <li>Interactive Live Workshops</li>
+                    <li>Curated Guest Experience Activations</li>
+                </ul>
+            </div>
+
+            <!-- Center Card: Marketing Services (Yellow Highlighted) -->
+            <div class="service-card highlight-center">
+                <h3>Marketing Services</h3>
+                <p class="quote">"End-to-end solutions to elevate your digital presence and drive business growth."</p>
+                <ul class="service-list">
+                    <li>Social Media Management</li>
+                    <li>Content Creation</li>
+                    <li>Branding & Design</li>
+                    <li>Campaign Planning & Launch Strategy</li>
+                    <li>Influencer Marketing</li>
+                    <li>Performance Marketing</li>
+                    <li>Website Development</li>
+                </ul>
+            </div>
+
+            <!-- Right Card: Creative Event Menu -->
+            <div class="service-card">
+                <h3>Creative Event Menu</h3>
+                <p class="quote">"Because your events deserve more than just catering and decor."</p>
+                <ul class="service-list">
+                    <li>Handmade Flower Bouquets</li>
+                    <li>Flower Lamp with LED Lights</li>
+                    <li>Clay Art Mirror Activity</li>
+                    <li>DIY Live Tumblr Stations</li>
+                    <li>Tote Bag Painting & Sip & Paint</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Visual Showcase Gallery -->
+    <section class="showcase-section fade-in" id="showcase">
+        <div class="showcase-container">
+            <h2 class="section-title">OUR WORK</h2>
+
+            <div class="gallery-grid">
+
+                <!-- Showcase 1: Brand Design -->
+                <div class="card-stack" onclick="openGallery('Results', 
+        [
+            'result1.jpeg', 
+            'result2.jpeg', 
+            'result3.jpeg', 
+            'result4.jpeg'
+        ], 
+        [
+            'Strategic creative concepts and initial visual directions crafted for the brand.', 
+            'Refined design assets, typography choices, and core visual identity elements.', 
+            'Tangible brand applications showcasing print materials and digital presence.', 
+            'Final deliverable showcase highlighting the overall outcome and brand transformation.'
+        ])">
+                    <span class="photo-count-badge">4 Photos</span>
+                    <div class="gallery-card">
+                        <img src="result1.jpeg" alt="Results" class="card-thumbnail">
+                        <div class="card-info">
+                            Results
+                            <span>Tap to view queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase 2: Social Media Content -->
+                <div class="card-stack" onclick="openGallery('Social Media', 
+        [
+            'social.jpeg', 
+            'social1.jpeg', 
+            'social2.jpeg', 
+            'social3.jpeg', 
+            'social4.jpeg', 
+            'social6.jpeg'
+        ], 
+        [
+            'Cohesive grid layout and visual aesthetic planned for brand feed consistency.', 
+            'Engaging promotional creative engineered for high reach and user interaction.', 
+            'Targeted ad creative and visual assets optimized for digital campaign performance.', 
+            'Custom story templates and interactive content formats designed for daily audience engagement.', 
+            'Product feature spotlight and branded graphics tailored for social platforms.', 
+            'Overview of digital campaigns, aesthetic feeds, and content performance outcomes.'
+        ])">
+                    <span class="photo-count-badge">6 Photos</span>
+                    <div class="gallery-card">
+                        <img src="social.jpeg" alt="Social Media" class="card-thumbnail">
+                        <div class="card-info">
+                            Social Media
+                            <span>Tap to view queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase 3: Live Tumblr Station -->
+                <div class="card-stack" onclick="openGallery('Activities For Large Scale Events', 
+        [
+            'act1.jpeg', 
+            'act2.jpeg', 
+            'act3.jpeg', 
+            'act4.jpeg', 
+            'act5.jpeg'
+        ], 
+        [
+            'Interactive activity booth prepped and styled to engage guests throughout the event.', 
+            'Hands-on creative experiences designed to give attendees a memorable take-home piece.', 
+            'Close-up view of the custom elements, raw materials, and artistic setup.', 
+            'Lively guest participation and real-time creation during peak event hours.', 
+            'A showcase of completed custom creations and happy moments from the activity zone.'
+        ])">
+                    <span class="photo-count-badge">5 Photos</span>
+                    <div class="gallery-card">
+                        <img src="act1.jpeg" alt="Activities For Large Scale Events" class="card-thumbnail">
+                        <div class="card-info">
+                            Activities For Large Scale Events
+                            <span>Tap to view queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase 4: Private Event Setup -->
+                <div class="card-stack" onclick="openGallery('Events', 
+        [
+            'event1.jpeg', 
+            'event2.jpeg', 
+            'event4.jpeg', 
+            'event3.jpeg', 
+            'event5.jpeg'
+        ], 
+        [
+            'Curated aesthetic touches and personalized decor elements created for the occasion.', 
+            'Crafting memorable interactive experiences and seamless guest engagements.', 
+            'Attentive focus on lighting, textures, and spatial setup to set the right mood.', 
+            'Unfiltered moments and lively interactions captured throughout the gathering.', 
+            'An overall view highlighting the complete styling, flow, and ambiance of the venue.'
+        ])">
+                    <span class="photo-count-badge">5 Photos</span>
+                    <div class="gallery-card">
+                        <img src="event1.jpeg" alt="Events" class="card-thumbnail">
+                        <div class="card-info">
+                            Events
+                            <span>Tap to view queue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section fade-in" id="contact">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p style="margin-bottom: 16px; opacity: 0.9;">Ready to scale your brand or create an unforgettable
+                    event?</p>
+
+                <div class="cofounder-box">
+                    <h4>Aishwarya Gupta</h4>
+                    <p>Co-Founder • <a href="tel:8766324421">+91 87663 24421</a></p>
+                </div>
+
+                <div class="cofounder-box">
+                    <h4>Jigisha Jain</h4>
+                    <p>Co-Founder • <a href="tel:9643312313">+91 96433 12313</a></p>
+                </div>
+
+                <p style="margin-top: 15px;">Email: <a href="mailto:scalevir@gmail.com"
+                        style="color: var(--butter-yellow); font-weight: 600;">scalevir@gmail.com</a></p>
+            </div>
+
+            <!-- REDIRECTING QR CODE BUTTON -->
+            <a href="https://instagram.com/scalevir" target="_blank" rel="noopener noreferrer"
+                style="text-decoration: none; color: inherit;">
+                <div class="qr-box" title="Click to visit our Instagram!">
+                    <h3 style="color: var(--dark-green); font-size: 1.2rem;">Follow Us On Instagram</h3>
+                    <div class="qr-image-wrapper">
+                        <img src="insta.png" alt="Scalevir Instagram QR Code">
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Tap or scan to visit
+                        profile ↗</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Scalevir Marketing & Events Agency</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal-overlay" id="imageModal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close modal">✕</button>
+
+            <!-- Image Container with Aesthetic Background Fill -->
+            <div class="modal-img-container">
+                <img id="modalBgBlur" class="modal-bg-blur" src="" alt="Background Overlay">
+                <img id="modalImageSrc" class="modal-main-img" src="" alt="Showcase Photo">
+            </div>
+
+            <h3 id="modalTitle" style="color: var(--dark-green); margin-bottom: 6px;">Title</h3>
+            <p id="modalDesc" style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">Description</p>
+
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button class="btn-primary" onclick="prevPhoto()"
+                    style="padding: 8px 16px; font-size: 0.85rem; width: auto;">← Previous</button>
+                <button class="btn-primary" onclick="nextPhoto()"
+                    style="padding: 8px 16px; font-size: 0.85rem; width: auto;">Next Photo →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
